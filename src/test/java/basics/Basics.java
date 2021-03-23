@@ -18,7 +18,7 @@ public class Basics {
 
         // given - all input details
         // when  - submit the API
-        // then  - validate the response
+        // then  - validate the response 
 
         RestAssured.baseURI = "https://rahulshettyacademy.com";
 
