@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1bc77e63-6d89-4949-b4be-c709ef9fa12e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/AddPlace.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/JiraAPI/Issues/createIssue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/JiraAPI/Authentication/Authentication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/basics/Basics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/basics/Basics.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/common/commonMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/common/commonMethods.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/helper/utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/helper/utils.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/DynamicJson/DynamicPayload.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/DynamicJson/DynamicPayload.class" afterDir="false" />
@@ -18,6 +19,13 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -59,7 +67,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Basics">
+  <component name="RunManager" selected="TestNG.createIssue.createIssue">
     <configuration name="Basics" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="basics.Basics" />
       <module name="RestAssured_TestAutomation" />
@@ -99,12 +107,52 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
+    <configuration name="Authentication.getSessionId" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RestAssured_TestAutomation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="JiraAPI.Auth.Authentication.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="JiraAPI.Auth" />
+      <option name="MAIN_CLASS_NAME" value="JiraAPI.Auth.Authentication.Authentication" />
+      <option name="METHOD_NAME" value="getSessionId" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="createIssue.createIssue" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RestAssured_TestAutomation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="JiraAPI.Issues.Issues.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="JiraAPI.Issues" />
+      <option name="MAIN_CLASS_NAME" value="JiraAPI.Issues.Issues.createIssue" />
+      <option name="METHOD_NAME" value="createIssue" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Maven.RestAssured_TestAutomation [clean...]" />
       <item itemvalue="Application.Basics" />
+      <item itemvalue="TestNG.Authentication.getSessionId" />
+      <item itemvalue="TestNG.createIssue.createIssue" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.createIssue.createIssue" />
+        <item itemvalue="TestNG.Authentication.getSessionId" />
         <item itemvalue="Application.Basics" />
       </list>
     </recent_temporary>
@@ -119,7 +167,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1616508094232</updated>
-      <workItem from="1616508096949" duration="3389000" />
+      <workItem from="1616508096949" duration="8204000" />
     </task>
     <task id="LOCAL-00001" summary="Second commit">
       <created>1616509280765</created>
@@ -128,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616509280765</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Section 7 :: Passing Json Payload from external file">
+      <created>1616516011855</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1616516011855</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,6 +202,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Second commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Second commit" />
+    <MESSAGE value="Section 7 :: Passing Json Payload from external file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Section 7 :: Passing Json Payload from external file" />
   </component>
 </project>
