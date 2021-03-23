@@ -1,6 +1,6 @@
-package JiraAPI.Issues.Issues;
+package JiraAPI.Issues;
 
-import JiraAPI.Issues.Authentication.Authentication;
+import JiraAPI.Authentication.Authentication;
 import io.restassured.RestAssured;
 import org.apache.http.HttpStatus;
 import org.testng.annotations.Test;

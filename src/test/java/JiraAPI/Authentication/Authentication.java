@@ -1,4 +1,4 @@
-package JiraAPI.Issues.Authentication;
+package JiraAPI.Authentication;
 
 import common.commonMethods;
 import io.restassured.RestAssured;
