@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1bc77e63-6d89-4949-b4be-c709ef9fa12e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/AddPlace.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/basics/Basics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/basics/Basics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/common/commonMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/common/commonMethods.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/helper/utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/helper/utils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/DynamicJson/DynamicPayload.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/DynamicJson/DynamicPayload.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/basics/Basics.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/basics/Basics.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/basics/parseComplexJson.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/basics/parseComplexJson.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/files/payload.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/files/payload.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,6 +21,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -111,8 +119,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1616508094232</updated>
-      <workItem from="1616508096949" duration="1114000" />
+      <workItem from="1616508096949" duration="3389000" />
     </task>
+    <task id="LOCAL-00001" summary="Second commit">
+      <created>1616509280765</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1616509280765</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,5 +144,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Second commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Second commit" />
   </component>
 </project>

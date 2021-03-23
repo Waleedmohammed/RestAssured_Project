@@ -6,28 +6,36 @@ import io.restassured.RestAssured;
 import org.apache.http.HttpStatus;
 import org.testng.Assert;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
 
 public class Basics {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         // Validate if Add Place API is working as expected
 
         // given - all input details
         // when  - submit the API
-        // then  - validate the response 
+        // then  - validate the response
+
+        // Passing Json from file
+        // Will convert Json to Byte then from Byte to String
 
         RestAssured.baseURI = "https://rahulshettyacademy.com";
-
         // Test Case 1: Add Place
 
         //Import manually as it is static package
         String responseBody = given().log().all().queryParam("key", "qaclick123")
                 .header("Content-Type", "application/json")
-                .body(payload.AddPlace())
+                //.body(payload.AddPlace())
+                //send payload from external file
+                .body(new String(Files.readAllBytes(Paths.get("src/test/resources/AddPlace.json"))))
                 .when().post("/maps/api/place/add/json")
                 .then().log().all().assertThat().statusCode(HttpStatus.SC_OK)
                 //.then().assertThat().statusCode(HttpStatus.SC_OK)
@@ -76,7 +84,7 @@ public class Basics {
 
 
         // use TestNg Assertion to verify two values are equals
-        Assert.assertEquals(updatedAddress,newAddress);
+        Assert.assertEquals(updatedAddress, newAddress);
 
 
     }
