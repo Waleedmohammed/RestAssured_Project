@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="create Issue" parallel="classes" thread-count="2" verbose="2">
+    <test name="create Issue">
+        <classes>
+            <class name="JiraAPI.Authentication.Authentication"/>
+            <class name = "JiraAPI.Issues.createIssue" />
+            <!--<class name = "JiraAPI.Issues.addAttachment" />!-->
+            <class name = "JiraAPI.Issues.getIssueDetails" />
+        </classes>
+    </test>
+</suite>

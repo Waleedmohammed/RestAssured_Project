@@ -1,37 +1,40 @@
 package JiraAPI.Authentication;
 
-import common.commonMethods;
 import io.restassured.RestAssured;
-import io.restassured.path.json.JsonPath;
+import io.restassured.filter.session.SessionFilter;
 import org.apache.http.HttpStatus;
-import org.testng.annotations.Test;
+import org.testng.ITestContext;
+import org.testng.annotations.BeforeSuite;
 
 import static io.restassured.RestAssured.*;
 
 
 public class Authentication {
 
-    @Test
-    public static  String getSessionId() {
+    @BeforeSuite
+    public void getSessionId(ITestContext context) {
 
         RestAssured.baseURI = "http://localhost:8080/";
 
-        String response = given().log().all().header("content-type", "application/json")
+        SessionFilter session = new SessionFilter();
+
+        //String response =
+                given().log().all().header("content-type", "application/json")
                 .body("{\n" +
                         "   \"username\":\"waleediti32\",\n" +
                         "   \"password\":\"Passwordmmhh88\"\n" +
                         "}")
+                .filter(session)
                 .when().post("/rest/auth/1/session")
                 .then().log().all().assertThat().statusCode(HttpStatus.SC_OK)
                 .extract().response().asString();
 
-        JsonPath Json = commonMethods.rowToJson(response);
+        //JsonPath Json = commonMethods.rowToJson(response);
+        //String sessionID = Json.get("session.value");
 
-        String sessionID = Json.get("session.value");
+        context.setAttribute("accessToken", session.getSessionId());
 
-        System.out.println("Generated Session Id = " + sessionID);
-
-        return sessionID;
+        System.out.println("Generated Session Id = " + context.getAttribute("accessToken"));
 
     }
 
