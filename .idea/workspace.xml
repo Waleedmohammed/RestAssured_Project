@@ -2,27 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1bc77e63-6d89-4949-b4be-c709ef9fa12e" name="Default Changelist" comment="Section 7 :: Passing Json Payload from external file">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/JiraAPI/Issues/addAttachment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/JiraAPI/Issues/deleteIssue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/JiraAPI/Issues/getIssueDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/jiraAttachment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestAssured_TestAutomation.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/JiraAPI/Authentication/Authentication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/JiraAPI/Authentication/Authentication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/JiraAPI/Issues/addAttachment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/JiraAPI/Issues/addAttachment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/JiraAPI/Issues/createIssue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/JiraAPI/Issues/createIssue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RestAssured_TestAutomation-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/RestAssured_TestAutomation-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/common/commonMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/common/commonMethods.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/helper/utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/helper/utils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/DynamicJson/DynamicPayload.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/DynamicJson/DynamicPayload.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/basics/Basics.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/basics/Basics.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/basics/parseComplexJson.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/basics/parseComplexJson.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/files/payload.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/files/payload.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/JiraAPI/Issues/deleteIssue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/JiraAPI/Issues/deleteIssue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/JiraAPI/Issues/getIssueDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/JiraAPI/Issues/getIssueDetails.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,12 +33,6 @@
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1928" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
   </component>
   <component name="ProjectId" id="1qA2VB9YEF08PuiufjtPtWA9olw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -130,24 +110,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Authentication.getSessionId (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="RestAssured_TestAutomation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="JiraAPI.Authentication.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="JiraAPI.Authentication" />
-      <option name="MAIN_CLASS_NAME" value="JiraAPI.Authentication.Authentication" />
-      <option name="METHOD_NAME" value="getSessionId" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Authentication.getSessionId" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssured_TestAutomation" />
       <extension name="coverage">
@@ -175,17 +137,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/My files/Projects/RestAssured_TestAutomation/testng.xml" type="TestNG" nameIsGenerated="true">
+    <configuration name="C:/My files/Projects/RestAssured_TestAutomation/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssured_TestAutomation" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="SUITE" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
@@ -242,16 +197,15 @@
       <item itemvalue="TestNG.createIssue.createIssueTest" />
       <item itemvalue="TestNG.Authentication.getSessionId" />
       <item itemvalue="TestNG.Authentication" />
-      <item itemvalue="TestNG.Authentication.getSessionId (1)" />
       <item itemvalue="TestNG.C:/My files/Projects/RestAssured_TestAutomation/testng.xml" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.createIssue.createIssueTest" />
+        <item itemvalue="TestNG.C:/My files/Projects/RestAssured_TestAutomation/testng.xml" />
         <item itemvalue="TestNG.createIssue.createIssue (1)" />
-        <item itemvalue="TestNG.Authentication.getSessionId (1)" />
         <item itemvalue="TestNG.Authentication.getSessionId" />
         <item itemvalue="TestNG.Authentication" />
+        <item itemvalue="TestNG.createIssue.createIssueTest" />
       </list>
     </recent_temporary>
   </component>
@@ -271,7 +225,8 @@
       <workItem from="1616588044622" duration="387000" />
       <workItem from="1616588705437" duration="764000" />
       <workItem from="1616590194839" duration="1353000" />
-      <workItem from="1616591727411" duration="8914000" />
+      <workItem from="1616591727411" duration="278000" />
+      <workItem from="1616592217331" duration="1235000" />
     </task>
     <task id="LOCAL-00001" summary="Second commit">
       <created>1616509280765</created>

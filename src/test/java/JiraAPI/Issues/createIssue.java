@@ -1,6 +1,5 @@
 package JiraAPI.Issues;
 
-import JiraAPI.Authentication.Authentication;
 import common.commonMethods;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
@@ -12,7 +11,7 @@ import static io.restassured.RestAssured.*;
 
 public class createIssue {
 
-    @Test(groups={"getIssueID"})
+    @Test(groups = {"getIssueID"})
     public void createIssueTest(ITestContext context) {
 
         RestAssured.baseURI = "http://localhost:8080/";
@@ -41,25 +40,29 @@ public class createIssue {
         context.setAttribute("issueId", issueId);
     }
 
-    @Test(dependsOnMethods = "createIssueTest")
-    public void addCommentToIssue(ITestContext context){
+    @Test(dependsOnMethods = "createIssueTest", groups = {"getCommentID"})
+    public void addCommentToIssue(ITestContext context) {
 
         RestAssured.baseURI = "http://localhost:8080/";
 
-        given().log().all().pathParam("issueIdOrKey",context.getAttribute("issueId"))
-                .header("Accept","application/json")
-                .header("Content-Type","application/json")
+        String addCommentResponse = given().log().all().pathParam("issueIdOrKey", context.getAttribute("issueId"))
+                .header("Accept", "application/json")
+                .header("Content-Type", "application/json")
                 .header("cookie", "JSESSIONID=" + context.getAttribute("accessToken"))
                 .body("{\n" +
                         "   \"visibility\":{\n" +
                         "      \"type\":\"role\",\n" +
                         "      \"value\":\"Administrators\"\n" +
                         "   },\n" +
-                        "   \"body\":\"This is comment for Test\"\n" +
+                        "   \"body\":\"This is comment for Test2\"\n" +
                         "}")
-        .when().post("/rest/api/2/issue/{issueIdOrKey}/comment")
+                .when().post("/rest/api/2/issue/{issueIdOrKey}/comment")
                 .then().log().all().assertThat().statusCode(HttpStatus.SC_CREATED)
                 .extract().response().asString();
+
+        JsonPath json = commonMethods.rowToJson(addCommentResponse);
+        String commentID = json.get("id");
+        context.setAttribute("commentID", commentID);
     }
 
 }
